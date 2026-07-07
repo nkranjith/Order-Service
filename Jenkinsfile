@@ -3,13 +3,13 @@ pipeline {
 
     environment {
         AWS_REGION = "us-east-1"
-        ECR_REPO = "user-service"
+        ECR_REPO = "order-service"
         ECS_CLUSTER = "web-app-dev"
         ECS_SERVICE = "arun-order-service-service"
         TASK_DEF_NAME = "arun-order-service"
         IMAGE_TAG = "${BUILD_NUMBER}"
         AWS_ACCOUNT_ID = "265193792843"
-        ECR_URI = "265193792843.dkr.ecr.us-east-1.amazonaws.com/user-service"
+        ECR_URI = "{265193792843.dkr.ecr.us-east-1.amazonaws.com/order-service}"
     }
 
     stages {
